@@ -3,16 +3,18 @@ class ComplexNumber {
     private final double imaginary;
 
     public static void main(String[] args) {
+        
         ComplexNumber n1 = new ComplexNumber(4, 8);
         System.out.println((int)n1.real + "+" + (int)n1.imaginary + "i");
         ComplexNumber n2 = new ComplexNumber(10, 12);
-        if(n1.plus(n2).real == 14 && n1.plus(n2).imaginary == 20){
+
+        if(n1.plus(n2).getReal() == 14 && n1.plus(n2).getImaginary() == 20){
             System.out.println("Il metodo sum funziona");
         }
         else {
             System.out.println("Il metodo sum non funziona");
         }
-        if(n1.sub(n2).real == -6 && n1.sub(n2).imaginary == -4){
+        if(n1.sub(n2).getReal() == -6 && n1.sub(n2).getImaginary() == -4){
             System.out.println("Il metodo sub funziona");
         }
         else {
