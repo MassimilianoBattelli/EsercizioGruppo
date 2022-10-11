@@ -12,6 +12,12 @@ class ComplexNumber {
         else {
             System.out.println("Il metodo sum non funziona");
         }
+        if(n1.sub(n2).real == -6 && n1.sub(n2).imaginary == -4){
+            System.out.println("Il metodo sub funziona");
+        }
+        else {
+            System.out.println("Il metodo sub non funziona");
+        }
     }
 
     public ComplexNumber(final double real, final double imaginary) {
