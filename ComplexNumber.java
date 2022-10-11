@@ -5,6 +5,13 @@ class ComplexNumber {
     public static void main(String[] args) {
         ComplexNumber n1 = new ComplexNumber(4, 8);
         System.out.println((int)n1.real + "+" + (int)n1.imaginary + "i");
+        ComplexNumber n2 = new ComplexNumber(10, 12);
+        if(n1.plus(n2).real == 14 && n1.plus(n2).imaginary == 20){
+            System.out.println("Il metodo sum funziona");
+        }
+        else {
+            System.out.println("Il metodo sum non funziona");
+        }
     }
 
     public ComplexNumber(final double real, final double imaginary) {
