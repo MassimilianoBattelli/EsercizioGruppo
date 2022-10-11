@@ -2,6 +2,9 @@ class ComplexNumber {
     private final double real;
     private final double imaginary;
 
+    public static void main(String[] args) {
+        
+    }
     public ComplexNumber(final double real, final double imaginary) {
         this.real = real;
         this.imaginary = imaginary;
