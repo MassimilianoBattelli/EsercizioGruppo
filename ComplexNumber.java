@@ -3,8 +3,10 @@ class ComplexNumber {
     private final double imaginary;
 
     public static void main(String[] args) {
-        
+        ComplexNumber n1 = new ComplexNumber(4, 8);
+        System.out.println((int)n1.real + "+" + (int)n1.imaginary + "i");
     }
+
     public ComplexNumber(final double real, final double imaginary) {
         this.real = real;
         this.imaginary = imaginary;
