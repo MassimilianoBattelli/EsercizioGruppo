@@ -7,6 +7,10 @@ class ComplexNumber {
         this.imaginary = imaginary;
     }
 
+    public String toString() {
+        return Double.toString(this.real) + '+' + Double.toString(this.imaginary) + 'i';
+    }
+
     public double getImaginary() {
         return 0;
     }
