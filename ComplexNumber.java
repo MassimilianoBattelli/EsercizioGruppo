@@ -20,6 +20,11 @@ class ComplexNumber {
         else {
             System.out.println("Il metodo sub non funziona");
         }
+        if(n1.times(n2).getReal() == -56 && n1.times(n2).getImaginary() == 128){
+            System.out.println("Il metodo times funziona");
+        }else{
+            System.out.println("Il metodo times non funziona");
+        }
     }
 
     public ComplexNumber(final double real, final double imaginary) {
