@@ -2,6 +2,26 @@ class ComplexNumber {
     private final double real;
     private final double imaginary;
 
+    public static void main(String[] args) {
+        
+        ComplexNumber n1 = new ComplexNumber(4, 8);
+        System.out.println((int)n1.real + "+" + (int)n1.imaginary + "i");
+        ComplexNumber n2 = new ComplexNumber(10, 12);
+
+        if(n1.plus(n2).getReal() == 14 && n1.plus(n2).getImaginary() == 20){
+            System.out.println("Il metodo sum funziona");
+        }
+        else {
+            System.out.println("Il metodo sum non funziona");
+        }
+        if(n1.sub(n2).getReal() == -6 && n1.sub(n2).getImaginary() == -4){
+            System.out.println("Il metodo sub funziona");
+        }
+        else {
+            System.out.println("Il metodo sub non funziona");
+        }
+    }
+
     public ComplexNumber(final double real, final double imaginary) {
         this.real = real;
         this.imaginary = imaginary;
